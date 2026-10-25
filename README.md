@@ -17,7 +17,7 @@ AIコーディングエージェント向けの役割定義と設計書運用ガ
 | `Kotlin.md` | Android / Kotlin（Jetpack Compose、Coroutines、Clean Architecture/MVVM） |
 | `Swift-ObjC.md` | Appleプラットフォーム（Swift 6 Concurrency、POP、Objective-C相互運用） |
 | `Typescript.md` | TypeScript（Strictモード、`any` 禁止、Vitest/Jest） |
-| `dotnet.md` | .NET / C#（.NET 10、record、Span<T>、Nullable参照型） |
+| `dotnet.md` | .NET / C#（.NET 10、record、`Span<T>`、Nullable参照型） |
 | `Python.md` | Python（型ヒント、frozen dataclass、pytest、mypy --strict） |
 
 ### 設計書運用ガイドライン
