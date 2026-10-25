@@ -12,8 +12,8 @@ AIコーディングエージェント向けの役割定義と設計書運用ガ
 
 | ファイル | 対象 |
 | :--- | :--- |
-| `AGENTS.md` | 汎用テンプレート（プレースホルダ付き） |
-| `Rust.md` | Rust（Rust 2024/2021、所有権、`tracing`、`cargo clippy`） |
+| [`AGENTS.md`](AGENTS.md) | 汎用テンプレート（プレースホルダ付き） |
+| [`Rust.md`](Rust.md) | Rust（Rust 2024/2021、所有権、`tracing`、`cargo clippy`） |
 | `Kotlin.md` | Android / Kotlin（Jetpack Compose、Coroutines、Clean Architecture/MVVM） |
 | `Swift-ObjC.md` | Appleプラットフォーム（Swift 6 Concurrency、POP、Objective-C相互運用） |
 | `Typescript.md` | TypeScript（Strictモード、`any` 禁止、Vitest/Jest） |
@@ -28,7 +28,7 @@ AIコーディングエージェント向けの役割定義と設計書運用ガ
 | `docs/core/Core.md` | 詳細設計（言語非依存） | I/O分離、決定論、DSL、スキーマ分離 |
 | `docs/impl/Impl.md` | 実装設計（言語固有） | モジュール構成、クラス割り当て、フレームワーク選定 |
 
-ファイル命名: `ARC-xxx` / `INT-xxx` / `DSL-xxx` / `COM-xxx` / `SCR-xxx` / `BIZ-xxx` / `IMP-{lang}/IMP-xxx` / `DEF-000`
+ファイル命名: `ARC-xxx` / `INT-xxx` / `DSL-xxx` / `COM-xxx` / `SCR-xxx` / `BIZ-xxx` / `impl/{lang}/IMP-xxx.md` / `DEF-000`
 
 基本設計（specs）で「何をするか」を定め、詳細設計（core）で「どう実現するか」を言語非依存に定める。詳細設計は基本設計を前提として導出する。
 
@@ -49,4 +49,4 @@ AIコーディングエージェント向けの役割定義と設計書運用ガ
 
 1. 利用する言語・プラットフォームに該当するファイルを選ぶ
 2. プロジェクトのルートに `AGENTS.md` としてコピーまたはリネームする
-3. 設計書を運用する場合は `docs/COMMON.md`、`docs/specs/Specs.md`、`docs/core/Core.md`、`docs/impl/Impl.md` を参照する
+3. 設計書を運用する場合は `docs/COMMON.md`、`docs/specs/Specs.md`、`docs/core/Core.md`、`docs/impl/Impl.md` を参照する（実装設計は詳細設計を前提として導出する）
